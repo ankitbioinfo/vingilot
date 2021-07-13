@@ -62,9 +62,9 @@ CMD ["bin/sh","-c","kallisto && bustools"]
 #RUN ["/kallisto"]
 
 #ENTRYPOINT /bin/bash
-ADD hello.sh /usr/local/bin/hello.sh  
-RUN chmod 777 /usr/local/bin/hello.sh 
-RUN /usr/local/bin/hello.sh 
+#ADD hello.sh /usr/local/bin/hello.sh  
+#RUN chmod 777 /usr/local/bin/hello.sh 
+#RUN /usr/local/bin/hello.sh 
 
 #CMD ["/usr/local/bin/hello.sh"]
 #COPY . .
