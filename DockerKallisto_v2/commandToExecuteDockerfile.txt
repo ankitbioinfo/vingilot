@@ -5,3 +5,6 @@ fastbuildah --runroot /tmp/${USER}/.local/share/containers/runroot --root /tmp/$
 
 
 give_me_jupyter 1 4Gi 0 ls6-stud-registry.informatik.uni-wuerzburg.de/extgruenlab3/jupyterlab-with-bwa-kallisto-cellranger
+
+
+sshuttle -x 132.187.15.2/32 -r extgruenlab3@login6.informatik.uni-wuerzburg.de 132.187.14.0/20
