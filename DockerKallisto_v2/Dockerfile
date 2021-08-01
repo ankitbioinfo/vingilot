@@ -79,8 +79,8 @@ COPY cellranger-$CELLRANGER_VER.tar.gz cellranger-$CELLRANGER_VER.tar.gz
 RUN tar -xzvf cellranger-$CELLRANGER_VER.tar.gz && \
     #echo $(ls)
     #alias cellranger=$HOME/cellranger-$CELLRANGER_VER/cellranger
-    echo "#!/bin/bash\n$HOME/cellranger-$CELLRANGER_VER/cellranger" > /opt/conda/bin/cellranger && \
-    chmod +x /opt/conda/bin/cellranger
+    #echo "#!/bin/bash\n$HOME/cellranger-$CELLRANGER_VER/cellranger" > /opt/conda/bin/cellranger && \
+    #chmod +x /opt/conda/bin/cellranger
 
 ENV PATH=${PATH}:$HOME/cellranger-$CELLRANGER_VER
 
